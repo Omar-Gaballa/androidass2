@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="16dp"
+    android:id="@+id/Constraint"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/PlayerImage"
+                android:layout_width="95dp"
+                android:layout_height="99dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/messi" />
+
+            <ImageView
+                android:id="@+id/RightArrow"
+                android:layout_width="49dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/rightarrow3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/PlayerName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/PercentageLogo"
+                android:layout_width="26dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/TeamLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.202"
+                app:srcCompat="@drawable/percentage2" />
+
+            <ImageView
+                android:id="@+id/TeamLogo"
+                android:layout_width="85dp"
+                android:layout_height="114dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/barca"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/RightArrow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Red_Green_Arrow"
+                android:layout_width="29dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/greenarrowup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PercentageLogo"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/PlayerName"
+                android:layout_width="94dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:text="Messi"
+                android:textColor="#5880CD"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/PlayerImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Percentage"
+                android:layout_width="27dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="55"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Red_Green_Arrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toEndOf="@+id/PercentageLogo"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.444" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
